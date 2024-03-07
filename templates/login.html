@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center; 
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+} 
+</style>
+<head>
+    <title>Вхід</title>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Вхід</h1>
+    <form method="post">
+        <label for="username">Логін:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Увійти">
+    </form>
+    <p>Немає облікового запису? <a href="{{ url_for('register') }}">Зареєструватися</a></p>
+    </div>>
+  </body>
+</html>

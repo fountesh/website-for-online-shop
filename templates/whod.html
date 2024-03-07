@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вхід успішний</title>
+</head>
+<body>
+    <h1>Ви увійшли як {{ session['username'] }}</h1>
+    <a href="{{ url_for('logout') }}">Вийти</a>
+</body>
+</html>
