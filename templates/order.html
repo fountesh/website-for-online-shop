@@ -98,31 +98,66 @@
 
 <body>
   <header>
-    <h1>Online Shop </h1>
+    <h1>Gaming Shop </h1>
     <h2 align="right">{{ session['username'] }}</h2>
     <h2 align="right"><a href="{{ url_for('logout') }}" class="highlighted-link">Вийти</a></h2>
   </header>
   
   <main>
     <div class="product">
-      <img src="C:\Users\User\.vscode\онлайн-магазин\pictures\iBUYPOWER-Gaming-PC-TraceMR258i-Ryzen-7-5700-RTX-3060-12GB-16GB-1TB-SSD-RGB-Windows-11-Home_3b288511-d6ed-4bec-92e9-f212f428a249.f9a9483cbf848f3cb6039f2848e52e2f.webp">
+      <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\19-1.jpg">
+      <h2>Monitor</h2>
+      <p class="price">$59.99</p>
+      <button onclick="addToCart(59.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\19-1.jpg">
+      <h2>Monitor</h2>
+      <p class="price">$74.99</p>
+      <button onclick="addToCart(74.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\248368726.webp">
+      <h2>Monitor</h2>
+      <p class="price">$89.99</p>
+      <button onclick="addToCart(89.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\завантаження (1).jpg">
+      <h2>keybord</h2>
+      <p class="price">$59.99</p>
+      <button onclick="addToCart(59.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+          <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\завантаження.jpg">
+          <h2>keybord</h2>
+          <p class="price">$69.99</p>
+          <button onclick="addToCart(69.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\завантаження (2).jpg">
+      <h2>gaming mause</h2>
+      <p class="price">$25.99</p>
+      <button onclick="addToCart(25.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\завантаження (3).jpg">
+      <h2>gaming mause(white)</h2>
+      <p class="price">$29.99</p>
+      <button onclick="addToCart(29.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="C:\Users\User\.vscode\онлайн-магазин2\pictures\завантаження (4).jpg">
       <h2>Gaming PC</h2>
       <p class="price">$599.99</p>
       <button onclick="addToCart(599.99)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-      <img src="product2.jpg">
-      <h2>Product 2</h2>
-      <p class="price">$24.99</p>
-      <button onclick="addToCart(24.99)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-      <img src="product3.jpg">
-      <h2>Product 3</h2>
-      <p class="price">$29.99</p>
-      <button onclick="addToCart(29.99)">Add to Cart</button>
     </div>
 
     <div id="cart">
